@@ -1042,6 +1042,34 @@ video {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+    /* Make images and containers scale properly on small screens */
+.home-img {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Make text scale on smaller screens */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .home-img {
+    padding: 0 1rem;
+  }
+}
+
 }
 </style></head>
   <body>
